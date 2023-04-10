@@ -7,5 +7,8 @@ metadata:
     app: demo-voting-app
 spec:
   containers:
-    - name: worker-app
+    - command:
+        - sleep
+        - "100"
+      name: worker-app
       image: kodekloud/examplevotingapp_worker:v1
